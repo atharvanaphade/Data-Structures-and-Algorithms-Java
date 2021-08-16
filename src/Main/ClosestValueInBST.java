@@ -1,7 +1,6 @@
 package Main;
 
 import java.io.*;
-import java.util.*;
 
 // Given a Binary Search Tree and a integer value, find the node in the BST which is closest to the
 // given integer value.
