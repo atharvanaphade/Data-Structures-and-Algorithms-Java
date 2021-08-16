@@ -20,6 +20,8 @@ public class RangeQueries {
 		for (int i = 0; i < n; i++) {
 			arr[i] = sc.nextInt();
 		}
+		BuildRMQ(arr);
+		BuildLogLookup(n);
 		int q = sc.nextInt();
 		while (q --> 0) {
 			int L = sc.nextInt(), R = sc.nextInt();
