@@ -4,10 +4,7 @@
 
 	1. Two Number Sum
 	2. Closest Value in BST
-
-##### List Data Structures : -
-
-	1. Arrays
-	2. Linked List
-	3. Trees
-	4. Graphs
+	3. Range Minimum Queries
+	
+	
+To open this project go to Eclipse -> File -> Import -> Select/Path/to/this/Repo.
