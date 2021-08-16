@@ -27,6 +27,7 @@ public class RangeQueries {
 			int L = sc.nextInt(), R = sc.nextInt();
 			System.out.println(Queries(L, R));
 		}
+		sc.close();
 	}
 	
 	public static int Queries (int L, int R) {
