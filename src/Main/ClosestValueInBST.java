@@ -6,6 +6,13 @@ import java.io.*;
 // given integer value.
 
 public class ClosestValueInBST {
+	
+	class Node {
+		int val;
+		Node right;
+		Node left;
+	}
+	
 	public static void main (String args[]) throws IOException {
 		;
 	}
