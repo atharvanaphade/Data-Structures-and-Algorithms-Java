@@ -6,6 +6,12 @@ import java.util.*;
 // Given a root node of a Binary Tree, return all the branch sums of the tree. Branch Sums are 
 // the sum of all nodes from the root node to the leaf node.
 
+class Node {
+	int val;
+	Node left;
+	Node right;
+}
+
 public class BranchSumsInBinaryTree {
 	
 	public static ArrayList<Integer> ret = new ArrayList<>();

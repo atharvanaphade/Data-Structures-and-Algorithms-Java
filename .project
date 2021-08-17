@@ -13,5 +13,17 @@
 	</buildSpec>
 	<natures>
 		<nature>org.eclipse.jdt.core.javanature</nature>
-	</natures>
+  </natures>
+  <repositories>
+  <repository>
+      <id>jitpack.io</id>
+      <url>https://jitpack.io</url>
+  </repository>
+</repositories>
+<dependency>
+  <groupId>org.algorithm-visualizer</groupId>
+  <artifactId>tracers.java</artifactId>
+  <version>[1.0.0,)</version>
+</dependency>
+
 </projectDescription>

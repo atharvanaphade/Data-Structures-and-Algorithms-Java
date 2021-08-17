@@ -5,12 +5,6 @@ import java.io.*;
 // Given a Binary Search Tree and a integer value, find the node in the BST which is closest to the
 // given integer value.
 
-class Node {
-	int val;
-	Node left;
-	Node right;
-}
-
 public class ClosestValueInBST {
 	public static void main (String args[]) throws IOException {
 		;
