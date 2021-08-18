@@ -8,9 +8,15 @@ public class NthFibNumber {
 		int n = 13;
 		System.out.println(Recursive(n));
 		DP(n);
-		DPOptimized(n);
+		HashMap<Integer, Integer> a = new HashMap<>();
+		a.put(0, 0);
+		a.put(1, 1);
+		int ret = RecursiveMemoization(n, a);
+		System.out.println(ret);
 	}
 	
+	// O(N^2) Time
+	// O(N) Space
 	public static int Recursive(int n) {
 		if (n == 2) {
 			return 1;
@@ -21,6 +27,8 @@ public class NthFibNumber {
 		}
 	}
 	
+	// O(N) Time
+	// O(N) Space
 	public static void DP (int n) {
 		int[] dp = new int[n];
 		for (int i = 0; i < n; i++) {
@@ -37,15 +45,14 @@ public class NthFibNumber {
 		System.out.print("\n");
 	}
 	
-	public static void DPOptimized(int n) {
-		int one = 0;
-		int two = 1;
-		int curr = 0;
-		for (int i = 2; i < n; i++) {
-			curr = one + two;
-			two = curr;
-			one = two;
+	// O(N) Time
+	// O(N) Space
+	public static Integer RecursiveMemoization (int n, HashMap<Integer, Integer> Memoization) {
+		if (Memoization.containsKey(n)) {
+			return n;
+		} else {
+			Memoization.put((RecursiveMemoization(n - 1, Memoization) + RecursiveMemoization(n - 2, Memoization)), (RecursiveMemoization(n - 1, Memoization) + RecursiveMemoization(n - 2, Memoization)));
+			return Memoization.get(n);
 		}
-		System.out.println(curr);
 	}
 }
