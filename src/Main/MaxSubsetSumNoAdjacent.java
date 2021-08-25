@@ -15,6 +15,8 @@ public class MaxSubsetSumNoAdjacent {
 		Solution(a);
 	}
 	
+	// O(N) Space
+	// O(N) Time O(1) Possible by using 2 variables instead of a pref array
 	public static void Solution (int[] a) {
 		int n = a.length;
 		int[] pref = new int[n];
