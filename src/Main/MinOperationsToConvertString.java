@@ -17,6 +17,8 @@ public class MinOperationsToConvertString {
 		Solution(a, b);
 	}
 	
+	// O(NM) Time
+	// O(NM) Space
 	public static void Solution (String a, String b) {
 		int m = a.length(), n = b.length();
 		int[][] dp = new int[m + 1][n + 1];
