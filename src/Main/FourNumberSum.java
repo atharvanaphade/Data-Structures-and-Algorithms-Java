@@ -5,6 +5,6 @@ import java.util.*;
 
 // 
 
-public class FastFourierTransform {
+public class FourNumberSum {
 
 }
