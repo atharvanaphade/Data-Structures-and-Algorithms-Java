@@ -3,7 +3,7 @@ package Main;
 import java.io.*;
 import java.util.*;
 
-// Sort minimum lenght subarray to make the array sorted.
+// Sort minimum length subarray to make the array sorted.
 
 public class SubArraySort {
 	public static void main (String[] args) {
