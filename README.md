@@ -1,5 +1,7 @@
 ### Basic Algorithms and Data Structures Implemented in Java
 
+Solutions to all problems are added in JavaDoc in every file.
+
 ##### List of Problems : -
 
 	1 1 Two Number Sum

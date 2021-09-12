@@ -17,6 +17,16 @@ public class ArithmeticSlicesLeetcode {
 		Solution (arr);
 	}
 	
+	/**
+	 * <h1>Solution</h1>
+	 * 
+	 * <p> Maintain a DP hashmap dp[i][j][k] where state is the number of APs j and k are part of. </p>
+	 * 
+	 * <p> Time : O(N^2) </p>
+	 * <p> Space : O(N^2) </p>
+	 * 
+	 * @param arr
+	 */
 	public static void Solution (int[] arr) {
 		int n = arr.length;
 		

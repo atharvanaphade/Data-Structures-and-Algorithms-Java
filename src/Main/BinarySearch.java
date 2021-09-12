@@ -3,9 +3,14 @@ package Main;
 import java.io.*;
 import java.util.*;
 
-// Binary Search is a searching algorithm which finds an element in a sorted array in O(logN) time 
-// This algo can be applied in many scenarios for ex. Searching a number closest to a given 
-// number i.e lower bound or upper bound in array.
+/**
+ * <h1>Binary Search</h1>
+ * 
+ * <p>Bin Search is a searching algorithm which finds a element in a sorted array in O(logN) time.</p>
+ * 
+ * @author atharvanaphade
+ *
+ */
 
 public class BinarySearch {
 	public static void main (String[] args) {
@@ -16,7 +21,12 @@ public class BinarySearch {
 		int t = 11;
 		BinSearch(a, t);
 	}
-	
+	/**
+	 * Divide and Conquer, VERY IMPORTANT to understand the difference between O(N) and O(logN) time complexity.
+	 * 
+	 * @param a
+	 * @param target
+	 */
 	public static void BinSearch (ArrayList<Integer> a, int target) {
 		int n = a.size();
 		int l = 0, r = n - 1;

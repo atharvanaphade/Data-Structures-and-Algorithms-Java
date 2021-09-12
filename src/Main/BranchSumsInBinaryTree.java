@@ -3,9 +3,25 @@ package Main;
 import java.io.*;
 import java.util.*;
 
-// Given a root node of a Binary Tree, return all the branch sums of the tree. Branch Sums are 
-// the sum of all nodes from the root node to the leaf node.
+/**
+ * <h1>Branch Sums of a Binary Tree</h1>
+ * 
+ * <p>Given the root of a binary tree return all the branch sums of the tree. Branch sum is the sum of all nodes from the root to the leaf node of the binary tree.</p>
+ * 
+ * @author atharvanaphade
+ *
+ */
 
+/**
+ * <h1>TreeNode Class</h1>
+ * 
+ * val (int)
+ * left (Node)
+ * right (Node)
+ * 
+ * @author atharvanaphade
+ *
+ */
 class Node {
 	int val;
 	Node left;
@@ -37,8 +53,12 @@ public class BranchSumsInBinaryTree {
 		}
 	}
 	
-	// O(N) Time
-	// O(N) Space
+	/**
+	 * Recursive solution in O(N) time and Space.<br>
+	 * Solution is quite self explanatory :).
+	 * 
+	 * @param Tree
+	 */
 	public static void naive (Node Tree) {
 		RecursiveHelper(Tree, 0);
 	}
