@@ -22,8 +22,8 @@ public class TopologicalSort {
 	 * Use DFS on all nodes and visit its prerequisite nodes till you find a node with 0 or least
 	 * prerequisites.</p>
 	 * 
-	 * <p>Time : - O(E + V)</p>
-	 * <p>Space : - O(E + V)</p>
+	 * <p>Time  s: O(E + V)</p>
+	 * <p>Space : O(E + V)</p>
 	 * 
 	 * @param n
 	 * @return void
