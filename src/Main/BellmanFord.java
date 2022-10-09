@@ -1,8 +1,3 @@
-package Main;
-
-import java.io.*;
-import java.util.*;
-
 /**
  * This algorithm finds all the shortest distances from a given src node to all other nodes, this
  * algorithm also works for negative edges. 
@@ -13,6 +8,12 @@ import java.util.*;
  * @author atharvanaphade
  *
  */
+package Main;
+
+import java.io.*;
+import java.util.*;
+
+
 
 public class BellmanFord {
 	
