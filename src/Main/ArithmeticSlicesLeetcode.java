@@ -14,7 +14,7 @@ import java.util.*;
 public class ArithmeticSlicesLeetcode {
 	public static void main (String[] args) throws IOException {
 		int[] arr = { 2, 4, 6, 8, 10, 12 };
-		Solution (arr);
+		solution(arr);
 	}
 	
 	/**
@@ -27,14 +27,15 @@ public class ArithmeticSlicesLeetcode {
 	 * 
 	 * @param arr
 	 */
-	public static void Solution (int[] arr) {
+	public static void solution(int[] arr) {
 		int n = arr.length;
 		
 		ArrayList<HashMap<Integer, Integer>> count = new ArrayList<>();
+		
 		for (int i = 0; i < n; i++) {
-			HashMap<Integer, Integer> mp = new HashMap<>();
-			count.add(mp);
+			count.add( new HashMap<Integer, Integer>());
 		}
+		
 		int ret = 0;
 		
 		for (int i = 0; i < n; i++) {
