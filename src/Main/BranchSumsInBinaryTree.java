@@ -1,7 +1,7 @@
 package Main;
 
-import java.io.*;
-import java.util.*;
+import java.io.IOException;
+import java.util.ArrayList;
 
 /**
  * <h1>Branch Sums of a Binary Tree</h1>
@@ -15,9 +15,7 @@ import java.util.*;
 /**
  * <h1>TreeNode Class</h1>
  * 
- * val (int)
- * left (Node)
- * right (Node)
+ * val (int) left (Node) right (Node)
  * 
  * @author atharvanaphade
  *
@@ -29,10 +27,10 @@ class Node {
 }
 
 public class BranchSumsInBinaryTree {
-	
+
 	public static ArrayList<Integer> ret = new ArrayList<>();
-	
-	public static void main (String[] args) throws IOException {
+
+	public static void main(String[] args) throws IOException {
 		Node a = new Node();
 		a.val = 1;
 		Node b = new Node();
@@ -47,29 +45,35 @@ public class BranchSumsInBinaryTree {
 		b.left = c;
 		b.right = d;
 		a.right = e;
+
 		naive(a);
+
 		for (Integer n : ret) {
 			System.out.println(n + " ");
 		}
 	}
-	
+
 	/**
 	 * Recursive solution in O(N) time and Space.<br>
 	 * Solution is quite self explanatory :).
 	 * 
-	 * @param Tree
+	 * @param tree
 	 */
-	public static void naive (Node Tree) {
-		RecursiveHelper(Tree, 0);
+	public static void naive(Node tree) {
+		recursiveHelper(tree, 0);
 	}
-	
-	public static void RecursiveHelper (Node curr, int sum) {
-		if (curr == null) return;
+
+	public static void recursiveHelper(Node curr, int sum) {
+		if (curr == null)
+			return;
+		
 		sum += curr.val;
+		
 		if (curr.left == null && curr.right == null) {
 			ret.add(sum);
-		} 
-		RecursiveHelper(curr.left, sum);
-		RecursiveHelper(curr.right, sum);
+		}
+		
+		recursiveHelper(curr.left, sum);
+		recursiveHelper(curr.right, sum);
 	}
 }
