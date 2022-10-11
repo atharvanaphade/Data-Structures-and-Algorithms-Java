@@ -1,7 +1,8 @@
 package Main;
 
-import java.io.*;
-import java.util.*;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.HashMap;
 
 // You are given a array of integers, you have to find how many AP are present in the array
 // minimum number of elements should be three  to be considered as a AP. And the AP should

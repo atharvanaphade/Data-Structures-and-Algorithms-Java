@@ -1,7 +1,7 @@
 package Main;
 
-import java.io.*;
-import java.util.*;
+import java.io.IOException;
+import java.util.Stack;
 
 /**
  * <h1>Balanced Brackets</h1>
