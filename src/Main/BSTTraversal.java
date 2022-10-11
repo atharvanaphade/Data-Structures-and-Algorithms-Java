@@ -1,54 +1,58 @@
 package Main;
 
-import java.io.*;
-import java.util.*;
+import java.io.IOException;
+import java.util.ArrayList;
 
 // Inorder -> left -> root -> right
 // Preorder -> root -> left -> right
 // Postrder -> left -> right -> root
 
 public class BSTTraversal {
-	static class Node {
+	class Node {
 		int val;
 		Node left;
 		Node right;
+
+		Node(int val) {
+			this.val = val;
+		}
 	}
-	
-	public static void main (String[] args) throws IOException {
+
+	public static void main(String[] args) throws IOException {
 		;
 	}
-	
+
 	// Recursive
 	// O(N) Time
 	// O(N) Space
-	public static ArrayList<Integer> InOrder (Node root, ArrayList<Integer> arr) {
+	public static ArrayList<Integer> inOrderTraversal(Node root, ArrayList<Integer> arr) {
 		if (root != null) {
-			arr = InOrder(root.left, arr);
+			arr = inOrderTraversal(root.left, arr);
 			arr.add(root.val);
-			arr = InOrder(root.right, arr);
+			arr = inOrderTraversal(root.right, arr);
 		}
 		return arr;
 	}
-	
+
 	// Recursive
 	// O(N) Time
 	// O(N) Space
-	public static ArrayList<Integer> PreOrder (Node root, ArrayList<Integer> arr) {
+	public static ArrayList<Integer> preOrderTraversal(Node root, ArrayList<Integer> arr) {
 		if (root != null) {
 			arr.add(root.val);
-			arr = PreOrder(root.left, arr);
-			arr = PreOrder(root.right, arr);
+			arr = preOrderTraversal(root.left, arr);
+			arr = preOrderTraversal(root.right, arr);
 		}
 		return arr;
 	}
-	
+
 	// Recursive
 	// O(N) Time
 	// O(N) Space
-	public static ArrayList<Integer> PostOrder (Node root, ArrayList<Integer> arr) {
+	public static ArrayList<Integer> postOrderTraversal(Node root, ArrayList<Integer> arr) {
 		if (root != null) {
-			arr = PostOrder(root.left, arr);
-			arr = PostOrder(root.right, arr);
+			arr = postOrderTraversal(root.left, arr);
+			arr = postOrderTraversal(root.right, arr);
 			arr.add(root.val);
 		}
 		return arr;
